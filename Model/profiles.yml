@@ -1,0 +1,28 @@
+jaffle_shop:
+  outputs:
+    dev:
+      dataset: B61
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      location: US
+      method: oauth
+      priority: interactive
+      project: pipelinedemo-383404
+      threads: 1
+      type: bigquery
+  target: dev
+my_ship:
+  outputs:
+    dev:
+      dataset: B61
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      location: US
+      method: oauth
+      priority: interactive
+      project: pipelinedemo-383404
+      threads: 1
+      type: bigquery
+  target: dev
+name: jaffle_shop
+profile: jaffle_shop

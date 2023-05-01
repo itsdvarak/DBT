@@ -1,0 +1,79 @@
+[0m15:26:06.061789 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C474467D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C47659FD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C473D7E10>]}
+
+
+============================== 15:26:06.061789 | 462f22bd-9489-4142-890a-4356183867b3 ==============================
+[0m15:26:06.061789 [info ] [MainThread]: Running with dbt=1.5.0
+[0m15:26:06.061789 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Dwaraka\\Desktop\\UnderTest\\ClonedProj\\itsdvarak\\DBT\\Model', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m15:26:06.061789 [error] [MainThread]: Encountered an error:
+1
+[0m15:26:06.061789 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\Dwaraka\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\requires.py", line 86, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dwaraka\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\requires.py", line 71, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dwaraka\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\main.py", line 459, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\Users\Dwaraka\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\task\init.py", line 285, in run
+    sys.exit(1)
+SystemExit: 1
+
+[0m15:26:06.061789 [debug] [MainThread]: Command `dbt init` failed at 15:26:06.061789 after 0.11 seconds
+[0m15:26:06.061789 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C47B5C190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C4147B8D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C47B6D210>]}
+[0m15:26:06.061789 [debug] [MainThread]: Flushing usage events
+[0m15:27:13.919167 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BEA4C7D750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BEA4D25F10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BEA5062F50>]}
+
+
+============================== 15:27:13.919167 | b3028724-a801-42e7-80ef-424c18bbbc9a ==============================
+[0m15:27:13.919167 [info ] [MainThread]: Running with dbt=1.5.0
+[0m15:27:13.919167 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\Dwaraka\\Desktop\\UnderTest\\ClonedProj\\itsdvarak\\DBT\\Model', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m15:27:13.919167 [debug] [MainThread]: Starter project path: C:\Users\Dwaraka\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\include\starter_project
+[0m15:30:30.609314 [info ] [MainThread]: Profile jaffle_shop written to C:\Users\Dwaraka\Desktop\UnderTest\ClonedProj\itsdvarak\DBT\Model\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m15:30:30.609314 [info ] [MainThread]: 
+Your new dbt project "jaffle_shop" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m15:30:30.609314 [debug] [MainThread]: Command `dbt init` succeeded at 15:30:30.609314 after 196.72 seconds
+[0m15:30:30.609314 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BEA53CE290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BEA5E70A50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BEA4D44150>]}
+[0m15:30:30.609314 [debug] [MainThread]: Flushing usage events
+[0m15:56:50.453183 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000242CE6AD290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000242CE39E6D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000242CE712F50>]}
+
+
+============================== 15:56:50.453183 | 3031b1e9-f620-4db5-a97e-3e12461d6434 ==============================
+[0m15:56:50.453183 [info ] [MainThread]: Running with dbt=1.5.0
+[0m15:56:50.468805 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Dwaraka\\Desktop\\UnderTest\\ClonedProj\\itsdvarak\\DBT\\Model', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m15:56:50.468805 [debug] [MainThread]: Starter project path: C:\Users\Dwaraka\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\include\starter_project
+[0m15:57:29.493427 [info ] [MainThread]: Profile my_ship written to C:\Users\Dwaraka\Desktop\UnderTest\ClonedProj\itsdvarak\DBT\Model\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m15:57:29.499235 [info ] [MainThread]: 
+Your new dbt project "my_ship" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m15:57:29.502555 [debug] [MainThread]: Command `dbt init` succeeded at 15:57:29.501230 after 39.09 seconds
+[0m15:57:29.503554 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000242CEAC4850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000242CF518A50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000242CE38CAD0>]}
+[0m15:57:29.504829 [debug] [MainThread]: Flushing usage events
